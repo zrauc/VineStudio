@@ -6,24 +6,23 @@ Stack: plain HTML, CSS, vanilla JavaScript. No React, no build step, no framewor
 No backend, no login, no forms. The only conversion path is a WhatsApp link.
 
 ## Contact
-WHATSAPP_NUMBER: 917051422693
 EMAIL: vinestudio.in@gmail.com
 INSTAGRAM_URL: https://instagram.com/vinestudio.in
-LOCATION: Bhaderwah, Jammu and Kashmir, India
-Default WhatsApp link:
-https://wa.me/917051422693?text=Hi%2C%20I%27d%20like%20a%20free%20demo%20for%20my%20business.
-Every WhatsApp link must use this number with a URL encoded message.
+LOCATION: Bhaderwah, Doda district, Jammu and Kashmir, India
+WhatsApp is not in use. Do not add WhatsApp links, numbers or wa.me URLs anywhere.
+Default contact CTA: link to the Instagram profile. Instagram does not support pre-filled DM text via URL, so all CTA buttons link to https://instagram.com/vinestudio.in and open in a new tab.
+Email (mailto:vinestudio.in@gmail.com) stays as a secondary contact option in the footer, not the primary CTA.
 
 ## People
-Founders (in this order, everywhere):
+Founders (in this order, everywhere public-facing):
 1. Ritish Sharma, Founder
 2. Aftab Ahmed, Founder
 3. Anmol Thakur, Founder
-Use the plural heading "Founders" wherever the team is shown. Do not add bios, quotes, social links or photos unless a file exists. Never render placeholder people.
-Optional portrait files, use only if they exist:
-assets/img/team-ritish-sharma.webp
-assets/img/team-aftab-ahmed.webp
-assets/img/team-anmol-thakur.webp
+Public pages show only the title "Founder" for all three. Do not show internal role titles (Technical Lead, Creative Lead, Marketing Lead) anywhere on the public site or in structured data.
+Internal roles, for our own reference only, not published:
+- Aftab Ahmed: Technical Lead
+- Ritish Sharma: Creative Lead
+- Anmol Thakur: Marketing Lead
 
 ## Pages and URLs
 / (home), /about/, /services/, /privacy/, /terms/, 404.html
@@ -83,12 +82,10 @@ No image, no gradient, left aligned.
 H2: What we do
 Text: Vine Studio is a small team that designs and builds websites for people who want to be found and taken seriously online. We keep things simple. We understand your business, work out what your website needs to do, and then build it so it looks good and works well for your customers.
 
-3. Services
-H2: Our services
-Three cards (name, one line, starting price, link "See details" to /services/):
-- Website Design, Starting from ₹3,000. Your website designed in Figma, so you can see exactly how it will look before anything is built.
-- Website Design and Development, Starting from ₹5,000. Your complete website, designed and built, ready to go live.
-- Landing Page Design and Development, Starting from ₹3,000. One focused page, designed and built by us.
+3. Landing Page Design and Development. Starting from ₹4,000. About 72 hours.
+One page, designed and built by us. A good fit if you're launching something, running ads, or your current page isn't working.
+You get: custom one-page design, full build, mobile friendly layout, basic SEO setup, up to 2 rounds of revisions.
+Button: Ask about a landing page. Link: mailto:vinestudio.in@gmail.com?subject=Landing%20Page%20Inquiry&body=Hi%2C%20I%27m%20interested%20in%20a%20Landing%20Page.
 
 4. How the free demo works
 H2: How the free demo works
