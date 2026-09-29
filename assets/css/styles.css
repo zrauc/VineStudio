@@ -250,7 +250,9 @@ a:hover {
 }
 
 .prose {
+  margin-inline: auto;
   max-inline-size: var(--prose-measure);
+  text-align: center;
 }
 
 .prose > * + * {
@@ -258,7 +260,8 @@ a:hover {
 }
 
 .prose :is(ul, ol) {
-  padding-inline-start: var(--space-3);
+  padding-inline-start: 0;
+  list-style-position: inside;
 }
 
 .prose :is(li + li) {
@@ -277,8 +280,11 @@ a:hover {
 .section-intro,
 .final-cta__content {
   display: grid;
+  margin-inline: auto;
   max-inline-size: var(--content-max-width);
   gap: var(--space-3);
+  justify-items: center;
+  text-align: center;
 }
 
 .hero__content > p,
@@ -292,7 +298,7 @@ a:hover {
 }
 
 .founders-intro .btn-text {
-  justify-self: start;
+  justify-self: center;
   margin-top: calc(var(--space-2) * -1);
 }
 
@@ -300,6 +306,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: var(--space-2);
 }
 
@@ -315,6 +322,7 @@ a:hover {
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--radius);
   padding: var(--space-3);
+  text-align: center;
   transition: border-color var(--transition-duration) ease;
 }
 
@@ -328,7 +336,7 @@ a:hover {
 }
 
 .service-card .btn {
-  align-self: flex-start;
+  align-self: center;
   margin-top: auto;
 }
 
@@ -342,12 +350,14 @@ a:hover {
 
 .demo-step {
   display: grid;
-  grid-template-columns: var(--space-4) minmax(0, 1fr);
+  grid-template-columns: 1fr;
   gap: var(--space-2);
   align-items: start;
+  justify-items: center;
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--radius);
   padding: var(--space-3);
+  text-align: center;
 }
 
 .demo-step__number {
@@ -359,12 +369,13 @@ a:hover {
 
 .demo-note {
   max-inline-size: var(--prose-measure);
-  margin-top: var(--space-3);
+  margin: var(--space-3) auto 0;
+  text-align: center;
 }
 
 .final-cta__content > div {
   display: grid;
-  justify-items: start;
+  justify-items: center;
   gap: var(--space-2);
 }
 
@@ -375,8 +386,10 @@ a:hover {
 
 .about-copy {
   display: grid;
+  margin-inline: auto;
   max-inline-size: var(--prose-measure);
   gap: var(--space-3);
+  text-align: center;
 }
 
 .page-intro {
@@ -398,6 +411,8 @@ a:hover {
   display: grid;
   gap: var(--space-1);
   padding: var(--space-3);
+  justify-items: center;
+  text-align: center;
 }
 
 .founder + .founder {
@@ -405,17 +420,21 @@ a:hover {
 }
 
 .about-closing .btn {
-  justify-self: start;
+  justify-self: center;
 }
 
 .service-block {
   display: grid;
+  margin-inline: auto;
   gap: var(--space-4);
+  text-align: center;
 }
 
 .service-block__description {
   display: grid;
   align-content: start;
+  justify-items: center;
+  margin-inline: auto;
   max-inline-size: var(--prose-measure);
   gap: var(--space-3);
 }
@@ -431,6 +450,7 @@ a:hover {
   display: grid;
   gap: var(--space-3);
   align-content: start;
+  justify-items: center;
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--radius);
   padding: var(--space-3);
@@ -450,7 +470,9 @@ a:hover {
   display: grid;
   gap: var(--space-1);
   margin: 0;
-  padding-inline-start: var(--space-3);
+  padding: 0;
+  list-style-position: inside;
+  text-align: center;
 }
 
 .service-block__note {
@@ -459,7 +481,7 @@ a:hover {
 }
 
 .service-block__details .btn {
-  justify-self: start;
+  justify-self: center;
 }
 
 .site-header {
@@ -541,6 +563,10 @@ a:hover {
   list-style: none;
 }
 
+.site-nav__list {
+  text-align: center;
+}
+
 .site-nav__list a {
   font-weight: var(--font-weight-semibold);
   text-decoration: none;
@@ -559,12 +585,14 @@ a:hover {
   display: grid;
   gap: var(--space-4);
   padding-block: var(--space-6);
+  text-align: center;
 }
 
 .site-footer__brand,
 .site-footer__contact {
   display: grid;
   gap: var(--space-2);
+  justify-items: center;
 }
 
 .site-footer__brand p,
@@ -578,7 +606,7 @@ a:hover {
 }
 
 .site-footer__contact a {
-  width: fit-content;
+  justify-self: center;
 }
 
 .site-footer__copyright {
@@ -618,6 +646,7 @@ a:hover {
 
   .demo-step {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   .founders-grid {
@@ -638,16 +667,34 @@ a:hover {
     display: none;
   }
 
+  .site-header__inner {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  }
+
+  .site-header__inner {
+    display: grid;
+  }
+
+  .site-logo {
+    justify-self: start;
+  }
+
   .site-nav,
   .site-nav[hidden] {
     position: static;
-    display: flex !important;
-    align-items: center;
-    gap: var(--space-3);
-    margin-left: auto;
-    border: 0;
-    background: transparent;
-    padding: 0;
+    display: contents !important;
+  }
+
+  .site-nav__list {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .site-nav > .btn {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    width: auto;
   }
 
   .site-nav__list {
@@ -656,18 +703,34 @@ a:hover {
     gap: var(--space-3);
   }
 
-  .site-nav .btn {
-    width: auto;
+  .site-footer__inner {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
   }
 
-  .site-footer__inner {
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+  .site-footer__brand {
+    justify-items: start;
+    text-align: left;
+  }
+
+  .site-footer__nav {
+    text-align: center;
+  }
+
+  .site-footer__contact {
+    justify-items: end;
+    text-align: right;
+  }
+
+  .site-footer__contact a {
+    justify-self: end;
   }
 
   .site-footer__copyright {
     grid-column: 1 / -1;
     border-top: var(--border-width) solid var(--color-border);
     padding-top: var(--space-3);
+    text-align: center;
   }
 }
 
